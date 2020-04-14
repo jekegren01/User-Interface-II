@@ -50,14 +50,54 @@ table {
 	border-spacing: 0;
 } 
 
-img {
+
+
+header {
+    background-color: slateblue;
+    width: 100%;
+    height: 100px;
+    display: flexbox;
+}
+
+nav {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.intro {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 48px;
+    color: olive;
+}
+
+
+.pics img, .mypic {
     height: 200px;
     width: 200px;
 }
 
+.p1title, .p2title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.pics, .pics2, {
+    border: 1px solid black;
+    
+}
 
 .button {
-    font: bold 11px Arial;
+    font: bold .8em Arial;
     text-decoration: none;
     background-color: #EEEEEE;
     color: #333333;
