@@ -55,9 +55,7 @@ table {
 header {
     background-color: slateblue;
     width: 100%;
-    height: 100px;
-    display: flexbox;
-    
+    height: 100px;    
 }
 
 nav {
@@ -115,16 +113,14 @@ body {
 }
 
 .pics {
+    padding: 10px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
-.p1title, .p2title {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.box1 {
+    padding: 10px;
 }
 
 .mainbody {
