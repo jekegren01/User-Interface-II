@@ -50,13 +50,16 @@ table {
 	border-spacing: 0;
 } 
 
-
+html {
+    font-size: 62.5%;
+}
 
 header {
     background-color: slateblue;
     width: 100%;
     height: 100px;    
 }
+
 
 nav {
     margin: 5px;
@@ -91,7 +94,9 @@ h2 {
 
 body {
     background-color: lightblue;
+    font-size: 1.8rem;
 }
+
 .mypic {
     width: 400px;
     height: 400px;
@@ -105,7 +110,6 @@ body {
     align-items: center;
     /* align-content: flex-start; */
 }
-
 
 .pics img {
     height: 200px;
@@ -151,4 +155,54 @@ footer {
 
 h3 {
     padding: 5px;
+}
+
+@media (max-width: 800px) {
+    .intro {
+        width: 80vw;
+        padding-bottom: 30vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .intro {
+        width: 70vw;
+        padding-bottom: 30vh;
+        flex-direction: column;
+        align-items: center;
+        margin: 10vw;
+    }
+    .mypic {
+        width: 80vw;
+        height: 80vw;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pics img{
+        height: 30vw;
+        width: 30vw;
+    }
+    .box1 {
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body {
+        font-size: 1.4rem;
+    }
 }
