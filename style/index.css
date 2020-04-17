@@ -191,10 +191,10 @@ h3 {
 @media (max-width: 550px) {
     .intro {
         width: 70vw;
-        padding-bottom: 20vh;
+        padding-bottom: 6rem;
         flex-direction: column;
         align-items: center;
-        margin: 10vw;
+        margin: 3rem;
     }
     .contintro {
         padding-top: 5rem;
