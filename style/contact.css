@@ -50,16 +50,13 @@ table {
 	border-spacing: 0;
 } 
 
-html {
-    font-size: 62.5%;
-}
-
 header {
     background-color: slateblue;
     width: 100%;
-    height: 100px;    
+    height: 100px;
+    display: flexbox;
+    
 }
-
 
 nav {
     margin: 5px;
@@ -67,21 +64,6 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
-}
-
-.intro {
-    height: 40rem;
-    width: 80rem;
-    padding: 30px;
-    margin: 30px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: flex-start;
-}
-.contintro {
-    margin: 2rem;
-    padding: 2rem;
 }
 
 h1 {
@@ -92,15 +74,16 @@ h1 {
 }
 
 h2 {
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: black;
     font-size: 24px;
     text-decoration: underline;
+    text-align: center;
 }
 
 body {
     background-color: lightblue;
-    font-size: 1.8rem;
 }
 
 .mypic {
@@ -113,29 +96,15 @@ body {
     display: flex;
     flex-direction: column;
     /* justify-content: flex-start; */
-    align-items: center;
+    align-items: flex-start;
     /* align-content: flex-start; */
-}
-
-.pics img {
-    height: 200px;
-    width: 200px;
-}
-
-.pics {
-    padding: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-
-.box1 {
-    padding: 10px;
 }
 
 .mainbody {
     padding: 20px;
+    text-align: center;
 }
+
 
 .button {
     font: bold .8em Arial;
@@ -163,78 +132,8 @@ h3 {
     padding: 5px;
 }
 
-@media (max-width: 800px) {
-    .intro {
-        width: 80vw;
-        padding-bottom: 30vh;
-        flex-direction: column;
-        align-items: center;
-    }
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    body {
-        font-size: 1.7rem;
-    }
-    .contintro {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .mainbody {
-        text-align: center;
-    }
-}
-
-@media (max-width: 550px) {
-    .intro {
-        width: 70vw;
-        padding-bottom: 10vh;
-        flex-direction: column;
-        align-items: center;
-        margin: 3rem;
-    }
-    .contintro {
-        padding-top: 5rem;
-    }
-    .mypic {
-        width: 50vw;
-        height: 60vw;
-    }
-
-    header {
-        margin-bottom: 20vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .pics img{
-        height: 30vw;
-        width: 30vw;
-    }
-    .box1 {
-        font-size: 1.3rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    body {
-        font-size: 1.4rem;
-    }
-
-    .contintro {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mainbody {
-        text-align: center;
-    }
-    .inttext {
-        padding-bottom: 25vh;
-    }
+.intpic {
+   display: flex;
+   flex-direction: row;
+   justify-content: center; 
 }
