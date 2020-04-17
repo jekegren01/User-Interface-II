@@ -191,7 +191,7 @@ h3 {
 @media (max-width: 550px) {
     .intro {
         width: 70vw;
-        padding-bottom: 6rem;
+        padding-bottom: 10vh;
         flex-direction: column;
         align-items: center;
         margin: 3rem;
@@ -232,5 +232,8 @@ h3 {
 
     .mainbody {
         text-align: center;
+    }
+    .inttext {
+        padding-bottom: 25vh;
     }
 }
